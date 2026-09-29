@@ -39,6 +39,47 @@ Any static server works — `npx serve`, VS Code Live Server, whatever you like.
 
 ---
 
+## Where to look, and what to ignore
+
+A repository looks like a lot of folders the first time you open one. Almost
+none of them are yours to worry about. Here is the honest breakdown.
+
+### 🎯 Your work goes here
+
+| Folder / file | What is in it |
+|---|---|
+| **`contributors/`** | **One JSON file per person.** Adding yourself here is the easiest possible first pull request — copy `_TEMPLATE.json`, rename it to your username, fill in your name. |
+| **The `.html` files at the top level** | The four pages of the site: `index.html`, `git-basics.html`, `pr-checklist.html`, `wall.html`, plus `404.html`. Most beginner issues are "fix the text / add a link / add alt text" and happen in exactly one of these. |
+| `css/` | How the site looks. Start with `theme.css` — every colour and spacing value in the whole site is a variable in that one file. |
+| `js/` | Three small scripts: the dark-mode switch, the copy buttons on code blocks, and the contributor wall. Intermediate issues live here. |
+
+### 📖 Worth reading, not editing
+
+| File | Why |
+|---|---|
+| `CONTRIBUTING.md` | The workflow: claim an issue, branch, commit, open a PR. |
+| `contributors/README.md` | Exactly how to add yourself to the wall. |
+
+### 🙈 Safe to ignore completely
+
+You will never need to touch any of these, and nothing in your issue will
+require it.
+
+| Thing | What it actually is |
+|---|---|
+| `.github/` | Robots. The checks that run on your PR, the issue templates, the bot that assigns you an issue when you comment `/claim`. Maintainer territory. |
+| `scripts/build_contributors.py` | A helper a GitHub Action runs by itself after your PR merges. You do not run it. |
+| `contributors/index.json` | **Generated automatically — never edit it by hand.** A robot rebuilds it from everyone's individual files. |
+| `.htmlvalidate.json` | Settings for the HTML checker. |
+| `.gitignore` | A list of files Git should not track. |
+| `LICENSE`, `SECURITY.md`, `CODE_OF_CONDUCT.md` | Standard paperwork every open source project carries. |
+| `assets/` | Images the site uses. |
+
+**The short version:** open an issue, it tells you the file. That file is
+almost always one `.html` page or one `.css` file. Everything else is scenery.
+
+---
+
 ## 🎃 Contributing
 
 **This repository exists so you can make your first pull request.**
@@ -65,7 +106,10 @@ check your work. If one does not, that is our mistake — tell us.
 
 ---
 
-## Project layout
+## Full file tree, for reference
+
+Everything marked *ignore* is infrastructure. It is listed only so that nothing
+in the repo looks mysterious.
 
 ```
 open-source-launchpad/
@@ -87,8 +131,15 @@ open-source-launchpad/
 │   ├── _TEMPLATE.json    # copy this
 │   ├── index.json        # generated — do not edit
 │   └── <username>.json   # one file per person
-└── scripts/
-    └── build_contributors.py   # rebuilds index.json
+├── scripts/
+│   └── build_contributors.py   # ignore — a robot runs this for you
+├── assets/               # ignore — images
+├── .github/              # ignore — CI checks, issue templates, bots
+├── .htmlvalidate.json    # ignore — HTML-checker settings
+├── .gitignore            # ignore
+├── LICENSE               # ignore — MIT
+├── SECURITY.md           # ignore
+└── CODE_OF_CONDUCT.md    # ignore
 ```
 
 ### One file per contributor, on purpose
@@ -119,17 +170,24 @@ variables from `theme.css` rather than hard-coded colours.
 
 ---
 
-## What CI checks
+## What CI checks, and what can actually stop your PR
 
-Every pull request runs four checks. All of them tell you how to fix what they
-found:
+Four checks run on every pull request, and each one only fires on something
+genuinely broken:
 
-| Check | Looks for |
+| Blocks the merge | Looks for |
 |---|---|
 | **contributor files** | Invalid JSON, a filename that does not match the handle, an over-long quote |
-| **HTML** | Unclosed tags, malformed markup |
+| **HTML** | A tag that was never closed, malformed markup |
 | **accessibility** | Images with no `alt`, a missing `lang`, `<title>`, or viewport tag |
 | **internal links** | An `href` or `src` pointing at a file that does not exist |
+
+**Style is never a blocker.** Quote marks, tag casing, heading order and similar
+house-style points appear as *warnings* in the log and are ignored by the gate.
+If the log says `warning`, it cannot stop your pull request — only `error` can.
+
+This is deliberate. Nobody's first contribution should be rejected by a robot
+over a style preference.
 
 Check the first one yourself before pushing:
 

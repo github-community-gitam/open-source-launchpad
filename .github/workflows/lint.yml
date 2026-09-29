@@ -3,6 +3,17 @@
 # This repo is where people make their first ever pull request, so every check
 # here is written to explain itself. A red X that does not say what to do is
 # worse than no check at all.
+#
+# These checks draw a hard line between two kinds of problem:
+#
+#   BLOCKS THE MERGE — the page is broken or unusable. A tag that was never
+#                      closed, a link pointing at a file that does not exist,
+#                      an image with no alt text, malformed JSON.
+#
+#   ADVICE ONLY      — house style. Quote marks, tag casing, heading order.
+#                      These show up as warnings and are ignored by the gate.
+#
+# Nobody's first contribution gets rejected by a robot over a style preference.
 name: Lint
 
 on:
@@ -44,9 +55,12 @@ jobs:
 
       - name: Validate every page
         run: |
+          # Anything listed as "warning" is style advice and does not affect
+          # the exit code. Only "error" lines can fail this job.
           npx --yes html-validate "*.html" || {
-            echo "::error::An HTML page has a problem. The log above names the file and line."
-            echo "Most common causes: a tag that was never closed, or a missing alt attribute on an image."
+            echo "::error::An HTML page is broken. The log above names the file and the line."
+            echo "Only real errors reach this point — warnings are style notes and are ignored."
+            echo "Most common causes: a tag that was never closed, or an <img> with no alt attribute."
             exit 1
           }
 
