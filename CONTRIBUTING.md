@@ -30,7 +30,7 @@ git clone https://github.com/YOUR-USERNAME/open-source-launchpad.git
 cd open-source-launchpad
 
 # 2. Point at the original repo so you can stay up to date
-git remote add upstream https://github.com/github-community-gitam/open-source-launchpad.git
+git remote add upstream https://github.com/pushpam2404/open-source-launchpad.git
 
 # 3. Start a local server
 python3 -m http.server 8000
