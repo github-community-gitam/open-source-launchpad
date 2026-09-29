@@ -48,4 +48,27 @@ Maintainers may take any action they judge appropriate:
 3. **A temporary ban** — from the repos and community spaces
 4. **A permanent ban** — for serious or repeated violations
 
+---
+
+## MLH Code of Conduct
+
+This project is part of an event run under [Major League Hacking](https://mlh.io).
+The Code of Conduct above governs this repository. The
+**[MLH Code of Conduct](https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md)**
+additionally governs our events, and all attendees agree to it at registration.
+
+**Reporting an incident:**
+
+| Route | Detail |
+|---|---|
+| Email | incidents@mlh.io |
+| Asia-Pacific hotline | +91 000 80004 02492 |
+| At an event | Any organiser, or the lead organiser directly |
+| In this repository | Contact a maintainer directly, or <!-- FILL: contact email --> |
+
+You will be believed, you will not be asked to justify why something bothered
+you, and you will not be pushed to interact with the person involved.
+
+---
+
 Attribution: adapted from the [Contributor Covenant](https://www.contributor-covenant.org), v2.1.

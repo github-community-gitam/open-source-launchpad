@@ -1,0 +1,18 @@
+# Maintainers for open-source-launchpad.
+#
+# Anyone listed here is automatically requested for review when a matching file
+# changes. This is what gives the 48-hour review promise an actual owner.
+#
+# A handle only works if that person has write access AND has accepted the
+# invitation. Check Settings → Collaborators.
+
+# Everything, by default
+*                       @pushpam2404 @RustyLegend @Vedant-OGC @Prashansure
+
+# CI and contribution policy
+/.github/               @pushpam2404
+/CONTRIBUTING.md        @pushpam2404
+/CODE_OF_CONDUCT.md     @pushpam2404
+
+# The contributor wall — high volume, low risk, good for a newer maintainer
+/contributors/          @pushpam2404 @RustyLegend @Vedant-OGC @Prashansure
