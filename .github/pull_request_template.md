@@ -41,4 +41,4 @@ Closes #
 
 ---
 
-<sub>First time here? Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md). Stuck? Ask in the community Discord — maintainers reply within 48 hours.</sub>
+<sub>First time here? Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md). Stuck? Comment on your issue saying what you have tried — a maintainer replies within 48 hours.</sub>

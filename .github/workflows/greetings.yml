@@ -30,7 +30,7 @@ jobs:
             A maintainer will get to this within **48 hours**. In the meantime:
             - Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md)
             - Want to work on something? Find an issue labelled `good first issue` and comment `/claim` on it
-            - Stuck on setup? Ask in our Discord, that is what it is for
+            - Stuck on setup? Comment on the issue saying what you have tried. Asking is not failing
           pr-message: |
             Congratulations on your first pull request to this repository.
 
