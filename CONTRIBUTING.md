@@ -1,7 +1,6 @@
 # Contributing to Open Source Launchpad
 
-Thanks for being here. This repository is part of **GITHUB Community GITAM** and
-is participating in **Hacktoberfest 2026**.
+Thanks for being here. This repository is part of **GITHUB Community GITAM**.
 
 **If this is your first ever pull request:** add yourself to the
 [contributor wall](wall.html). It is the gentlest possible start and it walks
@@ -136,7 +135,7 @@ gets you merged faster than any amount of explanation.
 
 A maintainer responds within **48 hours**:
 
-- **Approved and merged** — we add `hacktoberfest-accepted`. Done
+- **Approved and merged** — done
 - **Changes requested** — we point at exact lines. Push more commits to the
   same branch; the PR updates itself. This is normal and happens to experienced
   developers constantly. It is not criticism
@@ -148,7 +147,7 @@ A maintainer responds within **48 hours**:
 
 ### Automatically rejected
 
-Marked `invalid` / `spam` and excluded from Hacktoberfest:
+Marked `invalid` / `spam` and closed without review:
 
 - Whitespace, comma, or formatting-only changes to Markdown files
 - Adding your name or a link to `README.md` without being asked to

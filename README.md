@@ -4,7 +4,6 @@
 Plain HTML and CSS. No build step, no framework, no <code>npm install</code>.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Hacktoberfest-2026-FF8AE2" alt="Hacktoberfest 2026">
   <img src="https://img.shields.io/badge/good%20first%20issues-30-7057FF" alt="30 good first issues">
   <img src="https://img.shields.io/badge/setup-none%20required-1F883D" alt="No setup required">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT">
@@ -203,7 +202,7 @@ Maintained by **OS & DevX**, GITHUB Community GITAM.
 
 | Date | Event |
 |---|---|
-| Mon, Oct 5 | Hacktoberfest Kickoff & Live PR Lab |
+| Mon, Oct 5 | Open Source Kickoff & Live PR Lab |
 | Mon, Oct 12 | PR Debug Clinic #1 — bring a broken branch |
 | Wed, Oct 21 | PR Debug Clinic #2 |
 

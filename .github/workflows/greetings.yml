@@ -37,7 +37,7 @@ jobs:
             Here is what happens next:
             1. The checks below need to go green. If one is red, click **Details** to see why — that is normal, and fixing it is part of the work
             2. A maintainer reviews within **48 hours** and may leave line comments
-            3. Once it is approved, we label it `hacktoberfest-accepted` and merge
+            3. Once it is approved, a maintainer merges it
 
             Two things that get PRs closed, so please double-check:
             - No `Closes #<issue>` in the description

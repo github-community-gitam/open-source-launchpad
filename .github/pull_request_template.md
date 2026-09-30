@@ -1,5 +1,5 @@
 <!--
-  GITHUB Community GITAM — Hacktoberfest 2026
+  GITHUB Community GITAM
   Please fill this in. PRs that leave it blank are closed without review.
 -->
 
