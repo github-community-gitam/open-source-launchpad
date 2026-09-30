@@ -1,0 +1,86 @@
+[
+  {
+    "term": "Fork",
+    "short": "Your own copy of somebody else's repository.",
+    "full": "A fork lives under your GitHub account. You can change anything in it without affecting the original, which is why contributing always starts here — you are never editing the real project directly.",
+    "seeAlso": ["Clone", "Upstream"]
+  },
+  {
+    "term": "Clone",
+    "short": "Downloading a repository onto your own computer.",
+    "full": "git clone copies a repository from GitHub to your machine so you can open the files in an editor. You clone your fork, not the original.",
+    "seeAlso": ["Fork", "Remote"]
+  },
+  {
+    "term": "Branch",
+    "short": "A separate line of work inside a repository.",
+    "full": "A branch lets you make changes without touching main. If the change turns out badly you delete the branch and nothing is lost. Every contribution should be on its own branch.",
+    "seeAlso": ["Main", "Checkout"]
+  },
+  {
+    "term": "Main",
+    "short": "The default branch, holding the current good version.",
+    "full": "Historically called master. This is what visitors see and what gets deployed, which is why changes arrive through pull requests rather than being committed to it directly.",
+    "seeAlso": ["Branch", "Pull request"]
+  },
+  {
+    "term": "Commit",
+    "short": "A saved snapshot of your changes, with a message.",
+    "full": "A commit records what changed and why. Small commits with clear messages are much easier to review than one enormous commit at the end.",
+    "seeAlso": ["Push", "Commit message"]
+  },
+  {
+    "term": "Push",
+    "short": "Sending your commits from your computer up to GitHub.",
+    "full": "Commits live only on your machine until you push them. git push -u origin your-branch sends the branch to your fork and sets it as the default target for future pushes.",
+    "seeAlso": ["Commit", "Remote"]
+  },
+  {
+    "term": "Pull request",
+    "short": "A request to merge your branch into the original project.",
+    "full": "Often shortened to PR. It is a conversation as much as a code change — maintainers read it, ask questions and may request changes before merging.",
+    "seeAlso": ["Review", "Merge"]
+  },
+  {
+    "term": "Merge",
+    "short": "Combining your branch into another one.",
+    "full": "When a maintainer merges your pull request, your commits become part of the project's history permanently, with your name on them.",
+    "seeAlso": ["Pull request", "Merge conflict"]
+  },
+  {
+    "term": "Merge conflict",
+    "short": "Git cannot tell which of two changes to the same lines should win.",
+    "full": "This happens when you and somebody else edited the same lines. Git marks both versions in the file and asks you to choose. It looks alarming and is genuinely routine.",
+    "seeAlso": ["Merge", "Rebase"]
+  },
+  {
+    "term": "Remote",
+    "short": "A nickname for a repository somewhere else.",
+    "full": "origin usually points at your fork and upstream at the original project. git remote -v shows what yours are set to.",
+    "seeAlso": ["Upstream", "Clone"]
+  },
+  {
+    "term": "Upstream",
+    "short": "The original repository you forked from.",
+    "full": "Adding it as a remote lets you pull in work other people have merged since you forked, so your branch does not drift out of date.",
+    "seeAlso": ["Remote", "Fork"]
+  },
+  {
+    "term": "Issue",
+    "short": "A described piece of work, or a reported problem.",
+    "full": "Issues are how projects say what needs doing. Ones labelled good first issue have been written specifically for people who have not contributed before.",
+    "seeAlso": ["Claim", "Label"]
+  },
+  {
+    "term": "Review",
+    "short": "A maintainer reading your pull request and responding.",
+    "full": "A reviewer may approve, comment, or request changes. Requested changes are normal and are not a judgement of you — respond by pushing more commits to the same branch.",
+    "seeAlso": ["Pull request", "Maintainer"]
+  },
+  {
+    "term": "Maintainer",
+    "short": "Somebody responsible for a project, who can merge changes.",
+    "full": "Maintainers decide what goes in. They are usually volunteers, which is worth remembering when a reply takes a day or two.",
+    "seeAlso": ["Review", "Merge"]
+  }
+]

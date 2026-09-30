@@ -387,3 +387,74 @@
 .center {
   text-align: center;
 }
+
+/* ---------------------------------------------------------------------------
+   Glossary
+   Shares .wall-controls and .wall-search with the contributor wall, so the two
+   search boxes stay visually identical.
+   --------------------------------------------------------------------------- */
+
+.glossary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-3);
+}
+
+.glossary-entry {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: var(--s-4);
+  background: var(--c-surface);
+}
+
+.glossary-entry__term {
+  margin: 0 0 var(--s-1);
+  font-size: 1.05rem;
+}
+
+.glossary-entry__short {
+  margin: 0;
+  font-weight: 600;
+}
+
+.glossary-entry__full {
+  margin: var(--s-2) 0 0;
+  color: var(--c-text-muted);
+}
+
+/* ---------------------------------------------------------------------------
+   FAQ
+   Built on <details>/<summary> rather than a custom widget, so keyboard and
+   screen-reader behaviour comes from the browser instead of from us.
+   --------------------------------------------------------------------------- */
+
+.faq-item {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: var(--s-3) var(--s-4);
+  margin-bottom: var(--s-3);
+  background: var(--c-surface);
+}
+
+.faq-item > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: var(--s-1) 0;
+}
+
+.faq-item > summary:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+
+.faq-item[open] > summary {
+  margin-bottom: var(--s-2);
+}
+
+.faq-item > p {
+  margin: 0 0 var(--s-2);
+  color: var(--c-text-muted);
+}

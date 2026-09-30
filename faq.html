@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Open Source Launchpad</title>
+<meta name="description" content="Answers to the questions people actually ask before their first pull request, including the ones they are embarrassed to ask out loud.">
+<meta property="og:title" content="FAQ — Open Source Launchpad">
+<meta property="og:description" content="Answers to the questions people actually ask before their first pull request, including the ones they are embarrassed to ask out loud.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<script src="js/theme-toggle.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">🚀</span>
+      <span>Open Source Launchpad</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="git-basics.html">Git basics</a>
+      <a href="pr-checklist.html">PR checklist</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="wall.html">Contributor wall</a>
+      <button class="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main" id="main">
+  <h1>Questions people actually ask</h1>
+  <p class="lead prose">
+    Including the ones that feel too basic to say out loud. They are not.
+  </p>
+
+  <h2>Before you start</h2>
+
+  <details class="faq-item" id="q-good-enough">
+    <summary>Am I good enough to contribute to open source?</summary>
+    <p>Yes, and the question is more common than you would think. Every issue in
+    this project labelled <code>good first issue</code> was written for somebody
+    who has never contributed before. Some of them are one line of HTML.</p>
+  </details>
+
+  <details class="faq-item" id="q-break-something">
+    <summary>What if I break something?</summary>
+    <p>You cannot. You work on a copy (a fork), on a branch, and a maintainer
+    reads your change before it goes anywhere near the real project. There is no
+    button you can press that damages anything.</p>
+  </details>
+
+  <details class="faq-item" id="q-no-git">
+    <summary>I have never used Git. Is that a problem?</summary>
+    <p>No. The <a href="git-basics.html">Git basics</a> page walks through every
+    command you need, and there are only about six of them. You do not need to
+    understand Git to make your first contribution — you need to follow six
+    steps and then understand them afterwards.</p>
+  </details>
+
+  <h2>Claiming and working on an issue</h2>
+
+  <details class="faq-item" id="q-claim">
+    <summary>How do I claim an issue?</summary>
+    <p>Comment <code>/claim</code> on it. A bot assigns it to you within a few
+    seconds and labels it <code>status: claimed</code> so nobody else picks it
+    up.</p>
+  </details>
+
+  <details class="faq-item" id="q-how-many">
+    <summary>How many issues can I hold at once?</summary>
+    <p>Two. It is not a punishment — it is so that one person cannot claim
+    fifteen issues and leave them sitting while everybody else has nothing to
+    work on.</p>
+  </details>
+
+  <details class="faq-item" id="q-changed-mind">
+    <summary>I claimed something and cannot finish it. What now?</summary>
+    <p>Comment <code>/unclaim</code> and it goes back in the pool. That is
+    genuinely fine and nobody thinks less of you. If you go quiet for five days
+    a bot releases it automatically.</p>
+  </details>
+
+  <details class="faq-item" id="q-stuck">
+    <summary>I am stuck. Who do I ask?</summary>
+    <p>Comment on your own issue saying what you have tried and where it stopped
+    working. That is not an admission of failure — a well-described problem is
+    itself a contribution, and it is how maintainers find out the instructions
+    were unclear.</p>
+  </details>
+
+  <h2>Pull requests</h2>
+
+  <details class="faq-item" id="q-closes">
+    <summary>Why does my pull request need "Closes #12" in it?</summary>
+    <p>That line links your work to the issue and closes the issue automatically
+    when you are merged. Without it somebody has to close it by hand, which is
+    how issues get forgotten and two people end up doing the same work.</p>
+  </details>
+
+  <details class="faq-item" id="q-changes-requested">
+    <summary>A reviewer requested changes. Did I do badly?</summary>
+    <p>No. This is the normal path for most pull requests, including ones from
+    people who have been writing code for twenty years. Push another commit to
+    the same branch and the pull request updates itself.</p>
+  </details>
+
+  <details class="faq-item" id="q-ci-red">
+    <summary>The checks went red. What does that mean?</summary>
+    <p>An automatic check found something. Click <strong>Details</strong> to see
+    which one and why — every check in this project prints the exact command to
+    run on your own machine to reproduce it. A red check is information, not a
+    verdict.</p>
+  </details>
+
+  <details class="faq-item" id="q-how-long">
+    <summary>How long until somebody looks at my pull request?</summary>
+    <p>Within 48 hours. If it has been longer, say so in a comment on the pull
+    request — you are not being annoying, we dropped the ball.</p>
+  </details>
+
+  <h2>Using AI</h2>
+
+  <details class="faq-item" id="q-ai">
+    <summary>Can I use ChatGPT or Copilot?</summary>
+    <p>Yes. What you cannot do is open a pull request you are unable to explain.
+    You are responsible for understanding the change, running it yourself, and
+    answering questions about it in review — which is the whole point of doing
+    this in the first place.</p>
+  </details>
+
+  <hr>
+
+  <h2>Your question is not here</h2>
+  <p class="prose">
+    Then it belongs here. Open an issue with the question and we will add it —
+    that is a real contribution, and the questions people are afraid to ask are
+    exactly the ones worth writing down.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <h3>Open Source Launchpad</h3>
+      <p class="muted">Your first pull request starts here.<br>
+      Built by GITHUB Community GITAM.</p>
+    </div>
+    <div>
+      <h3>Learn</h3>
+      <ul>
+        <li><a href="git-basics.html">Git basics</a></li>
+        <li><a href="pr-checklist.html">PR checklist</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="wall.html">Contributor wall</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contribute</h3>
+      <ul>
+        <li><a href="https://github.com/pushpam2404/open-source-launchpad/issues">Open issues</a></li>
+        <li><a href="https://github.com/pushpam2404/open-source-launchpad/blob/main/CONTRIBUTING.md">Contributing guide</a></li>
+        <li><a href="https://github.com/pushpam2404/terminal-arcade">Terminal Arcade</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Community</h3>
+      <ul>
+        <li><a href="https://github.com/github-community-gitam">GITHUB Community GITAM</a></li>
+        <li><a href="https://github.com/pushpam2404/open-source-launchpad">This repository</a></li>
+        <li><a href="https://github.com/pushpam2404/open-source-launchpad/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/copy-code.js"></script>
+</body>
+</html>
