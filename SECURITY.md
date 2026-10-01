@@ -8,7 +8,8 @@ Instead, either:
 
 - Use GitHub's [private vulnerability reporting](../../security/advisories/new)
   (the **Security** tab → **Report a vulnerability**), or
-- Email <!-- FILL: security contact email -->
+- Or message a maintainer directly on GitHub, or in the community WhatsApp
+  group. Please do not post the details in a public channel.
 
 Please include:
 

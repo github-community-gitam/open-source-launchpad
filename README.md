@@ -22,7 +22,7 @@ someone who has never opened a pull request before.
 ## Run it locally
 
 ```bash
-git clone https://github.com/pushpam2404/open-source-launchpad.git
+git clone https://github.com/github-community-gitam/open-source-launchpad.git
 cd open-source-launchpad
 python3 -m http.server 8000
 ```
@@ -206,7 +206,7 @@ Maintained by **OS & DevX**, GITHUB Community GITAM.
 | Mon, Oct 12 | PR Debug Clinic #1 — bring a broken branch |
 | Wed, Oct 21 | PR Debug Clinic #2 |
 
-Also worth a look: **[terminal-arcade](https://github.com/pushpam2404/terminal-arcade)**,
+Also worth a look: **[terminal-arcade](https://github.com/github-community-gitam/terminal-arcade)**,
 our Python mini-games project, if you would rather write Python than HTML.
 
 ## License
