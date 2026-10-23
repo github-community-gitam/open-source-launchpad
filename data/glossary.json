@@ -82,5 +82,17 @@
     "short": "Somebody responsible for a project, who can merge changes.",
     "full": "Maintainers decide what goes in. They are usually volunteers, which is worth remembering when a reply takes a day or two.",
     "seeAlso": ["Review", "Merge"]
+  },
+  {
+    "term": ".gitignore",
+    "short": "A file that tells Git which untracked files and folders to ignore.",
+    "full": "A .gitignore file lists patterns for files and folders that should stay out of commits. This repository ignores __pycache__/, so Python cache files are not added to your pull request. Files already tracked by Git are not affected by these rules.",
+    "seeAlso": ["Commit", "Pull request"]
+  },
+  {
+    "term": "README",
+    "short": "The first thing a visitor usually reads when exploring a project.",
+    "full": "A file introducing the project, which may include its structure, purpose, usage instructions, and other information.",
+    "seeAlso": ["Fork", "Pull request"]
   }
 ]
